@@ -1,4 +1,5 @@
 # WEBSITE
+cricket images is die images in die products database
 
 File is opdatum tot en met die laaste verandering wat oom gemaak het
 
