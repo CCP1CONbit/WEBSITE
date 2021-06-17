@@ -1,0 +1,82 @@
+<?php
+   if (!session_id()) {
+    session_start();
+    setcookie(session_name(),session_id(),time() + 7200);
+}
+$loademail = $_SESSION["USERemail"];
+?>
+<style>
+.spacing{
+        margin-top: 2vw;
+        font-size: 2vw;   
+    }
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+</style>
+
+</div>
+<div class="blackline" style="background-color: #555;width: auto;height: 1vw;"></div>
+
+<div class="Contact">
+    <p style="margin-left: 0.5vw;">
+        <pre>
+        <h1 style="text-align: center; color:dimgrey; text-decoration: underline;font-size: 2vw;">CONTACT-US</h1><p style=" color:dimgrey;font-size: 1.5vw;"> <pre style=" color:dimgrey; font-size: 1.5vw; margin-left: : 1.5vw;">
+        Please feel free to contact us for any information or queries regarding any of our product.
+        Email us for refunds or incase of faulty products please follow our terms and conditions on the slip.</pre></p>
+    <pre style="margin-left: 3vw;">
+                        <h1 style="text-decoration: underline;font-family: monospace;font-size: 2vw;">Contact Information</h1>
+                        <h2 style="font-family: monospace;font-size: 1vw;">Cell-no:    +27 xx xxx xxxx</h2>
+                        <h2 style=" font-family: monospace;font-size: 1vw;">Tellephone: +27 xx xxx xxxx</h2>
+                        <h2 style="font-family: monospace;font-size: 1vw;">Email:      Dummy-email@dummy.com</h2>
+                        <h2 style="font-family: monospace;font-size: 1vw;">Or visit us in store at:</h2>
+<div style="align-content: center" >        
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.692566725659!2d28.198969315399548!3d-25.879593983583273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9565dea7aad17b%3A0xd3237c7f0abb80d1!2sCenturion%20Akademie%20%2F%20Academy%20-%20Highveld!5e0!3m2!1sen!2sza!4v1619343992406!5m2!1sen!2sza"  style="border:0;width: 10vw;height: 10vw" allowfullscreen="" loading="lazy"></iframe>
+</div>     
+ </pre>
+ </pre>      
+</p>
+<div>
+    <div class="spacing">
+    <h1>Request a Qoutation:</h1>
+    </div>
+<div class="container">
+  <form action="email.php" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+    
+    <label for="email">Email</label>
+    <input type="text" id="Qoute_email" name="useremail" placeholder="Youre email.." value="<?php echo $loademail; ?> ">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="querry" placeholder="Write something.." style="height:200px"></textarea>
+
+    <button type="submit"  name="Submit" value="submit" style="background-color: darkorange;color: #555;padding: 12px 20px;border-radius: 4px;border: none;cursor: pointer;">Submit</button>
+  </form>
+</div>
+
+</div>
+</div>
+
+
+   

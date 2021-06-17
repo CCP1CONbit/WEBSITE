@@ -1,0 +1,35 @@
+.tableusers{
+	margin-right: 3vw;
+	margin-top: 2vw;
+	width: 50%;
+	margin: 30px auto;
+	border-collapse: collapse;
+	text-align: left;
+	
+
+}
+.tru{
+	border-bottom: 1px solid #black;
+}
+.thu, .tdu {
+	border-right: 2vw;
+	border: 1px solid black;
+	height: 30px;
+	padding: 2px;
+}
+.tru:hover{
+	background: #grey;
+}
+.spacing
+{
+	margin-top: 3vw;
+	
+	margin-left: 5vw;
+	margin-right: 3vw;
+
+}
+.tablespace{
+	margin-left: 3vw;
+	margin-right: 3vw;
+	align-content: center;
+}
